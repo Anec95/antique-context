@@ -1,30 +1,149 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    background-color: rgb(230, 241, 248);
+    /* background-color: whitesmoke; */
 }
 
 header {
-    border: 3px solid gray;
-    border-radius: 0 0 7px 7px;
-    height: 299px;
+    font-size: 50px;
+    font-weight: 700;
+    font-variant: small-caps;
+    -webkit-text-stroke: 1px rgb(50, 66, 77);
+    /* color: rgb(50, 66, 77); */
+    color: white;
+    font-family: 'Kalam';
+
+    position: absolute;
+    width: 40%;
+    left: 0;
+    top: 20%;
+    margin: 0;
+    text-align: right;
+    letter-spacing: 20px;
 }
-    
-.header-title {
-    font-family: 'Passions Conflict';
-    font-size: 90px;
-    margin: -5px 0 0 0;
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.grid-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(12, 50px);
+    gap: 10px;
+
+    position: absolute;
+    left: 0%;
+    top: 100px;
+    right: 10%;
+}
+
+.menu-element {
+    position: relative;
+}
+
+.vertical-words {
+    position: absolute;
     text-align: center;
+    bottom: 0;
+    left: 10px;
 }
 
-.header-photo {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+.second-word {
+    left: 30px;
 }
 
-.up {
-    object-position: bottom -449px right 0px;
+.orizontal-words {
+    position: absolute;
+    text-align: left;
+    bottom: -15px;
+    right: 5px;
 }
 
-.down {
-    object-position: bottom -250px right 0;
+.element-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 11;
+    background-color: lightslategray;
+
+    background-image: url(assets/images/george-the-ring.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.element-2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color: lightseagreen;
+}
+
+.element-3 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: lightgreen;
+}
+
+.element-4 {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    background-color: lightsalmon;
+
+    background-image: url(assets/images/victorian-age-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.element-5 {
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 7;
+    grid-row-end: 12;
+    background-color: lightgoldenrodyellow;
+}
+
+.element-6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 11;
+    grid-row-end: 15;
+    background-color: lightpink;
+}
+
+.element-7 {
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: lightskyblue;
+}
+
+.menu-element:hover {
+    position: relative;
+    right: 10%;
+    width: 120%;
+    border: 5px solid lightgray;
+    cursor: pointer;
+    z-index: 100;
 }
