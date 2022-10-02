@@ -143,7 +143,9 @@ h2 {
     position: relative;
     right: 10%;
     width: 120%;
-    border: 5px solid lightgray;
+    /* border: 5px solid lightgray; */
+    /* box-shadow: 8px 5px rgb(179, 205, 214); */
+    box-shadow: 7px 5px rgba(191, 200, 206, 0.8);
     cursor: pointer;
     z-index: 100;
 }
