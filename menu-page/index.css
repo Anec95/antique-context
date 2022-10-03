@@ -32,6 +32,11 @@ header {
     border-radius: 10px;
 }
 
+.left-button {
+    display: flex;
+    justify-content: space-around;
+}
+
 .logo-header {
     margin-left: 15%;
     margin-right: 15%;
@@ -39,7 +44,9 @@ header {
     height: 70%;
     border: 2px solid rgb(230, 241, 248);
 
-    background-color: lightseagreen;
+    background-image: url(../assets/images/logo-header.png);
+    background-size: cover;
+    background-position: center;
 }
 
 /* LEFT AND RIGHT SECTION */
@@ -50,16 +57,18 @@ header {
     height: 92vh;
     position: absolute;
     top: 8vh;
-
-    background-color: blueviolet;
 }
 
 .left-section {
-    left: 0;
+    left: 0;    
+
+    border-right: 2px solid rgba(60, 50, 50, 0.9);
 }
 
 .right-section {
     right: 0;
+
+    border-left: 2px solid rgba(60, 50, 50, 0.9);
 }
 
 /* MAIN */
@@ -80,8 +89,8 @@ main {
 }
 
 .text-page {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .main-text {
