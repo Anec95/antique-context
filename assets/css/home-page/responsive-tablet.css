@@ -1,0 +1,15 @@
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+    main {
+        flex-direction: column;    
+        margin: 0 5%;
+    }
+    
+    .menu-grid {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .menu-grid p {
+        font-size: 18px;
+    }
+}
